@@ -34,10 +34,10 @@ vscode:
  extensions:
   - ms-vscode.makefile-tools@0.3.1
 # workspaceLocation: "."
-image:
-  file: .gitpod.workspace-full-vnc #dockerfile
+#image:
+#  file: .gitpod.workspace-full-vnc #dockerfile
 #image: gitpod/workspace-full
-#image: gitpod/workspace-full-vnc
+image: gitpod/workspace-full-vnc
 #ports:
 #  - port: 6080
 #    onOpen: open-preview
