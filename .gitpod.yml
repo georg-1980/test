@@ -39,4 +39,4 @@ github:
 vscode:
  extensions:
   - ms-vscode.makefile-tools@0.3.1
-workspaceLocation: "."
+# workspaceLocation: "."
