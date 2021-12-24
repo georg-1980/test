@@ -5,9 +5,9 @@
 #    
 #      echo 'Georg 02 TODO: start app' && echo '3'
 tasks:
-  - before: sudo apt-get install ccache -y # echo 'test before' # sh ./scripts/setup.sh
-    init: ccache -M 51G #sudo apt-get install ccache -y #npm install
-    command: echo "test" #sudo apt-get install ccache -y # npm run dev
+  - before: echo "deb-src http://archive.ubuntu.com/ubuntu/ focal main restricted" >> /etc/apt/sources.list && echo "deb-src http://archive.ubuntu.com/ubuntu/ focal-updates main restricted" >> /etc/apt/sources.list && echo "deb-src http://security.ubuntu.com/ubuntu/ focal-security main restricted" >> /etc/apt/sources.list" && echo "deb-src http://security.ubuntu.com/ubuntu/ focal-security universe" >> /etc/apt/sources.list && echo "deb-src http://security.ubuntu.com/ubuntu/ focal-security multiverse" >> /etc/apt/sources.list  # echo 'test before' # sh ./scripts/setup.sh
+    init: sudo apt-get install ccache -y #sudo apt-get install ccache -y #npm install
+    command: ccache -M 51 #sudo apt-get install ccache -y # npm run dev
   - name: Database
     init: echo 'init database' #sh ./scripts/seed-database.sh
     command: npm start-db
