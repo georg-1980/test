@@ -1,4 +1,4 @@
-#tasks:  hallo testid
+#tasks:
 #  - init: |
 #      echo 'Georg 01 TODO: build project' && echo '2'
 #    command: |
