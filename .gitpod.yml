@@ -9,7 +9,7 @@ tasks:
     init: ccache -M 51G #sudo apt-get install ccache -y #npm install
     command: echo "test" #sudo apt-get install ccache -y # npm run dev
   - name: Database
-    init: echo 'init database' #sh ./scripts/seed-database.sh
+    init: echo 'init databaserevercommitid' #sh ./scripts/seed-database.sh
     command: npm start-db
     env:
       DB_HOST: localhost:3306
