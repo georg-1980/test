@@ -1,6 +1,6 @@
 #tasks:
 #  - init: |
-#      echo 'Georg 01 TODO: build project' && echo '2'
+#      echo 'Geodrg 01 TODO: build project' && echo '2'
 #    command: |
 #    
 #      echo 'Georg 02 TODO: start app' && echo '3'
