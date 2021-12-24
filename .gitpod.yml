@@ -7,7 +7,7 @@
 tasks:
   - before: sudo apt-get install ccache -y # echo 'test before' # sh ./scripts/setup.sh
     init: ccache -M 51G #sudo apt-get install ccache -y #npm install
-    command: echo "test" #sudo apt-get install ccache -y # npm run dev
+    command: echo "testtestrevert" #sudo apt-get install ccache -y # npm run dev
   - name: Database
     init: echo 'init database' #sh ./scripts/seed-database.sh
     command: npm start-db
