@@ -1,7 +1,7 @@
 tasks:
-  - before: echo "deb-src http://archive.ubuntu.com/ubuntu/ focal main restricted" >> /etc/apt/sources.list && echo "deb-src http://archive.ubuntu.com/ubuntu/ focal-updates main restricted" >> /etc/apt/sources.list && echo "deb-src http://security.ubuntu.com/ubuntu/ focal-security main restricted" >> /etc/apt/sources.list && echo "deb-src http://security.ubuntu.com/ubuntu/ focal-security universe" >> /etc/apt/sources.list && echo "deb-src http://security.ubuntu.com/ubuntu/ focal-security multiverse" >> /etc/apt/sources.list && sudo apt-get update
-    init: echo "int"  #&& sudo apt-get install build-essential git libkrb5-dev graphviz nasm ccache -y && sudo apt-get build-dep -y libreoffice #sudo apt-get install ccache -y 
-    command: echo "command" #sudo apt-get install ccache -y && ccache -M 51
+  - before: echo "deb-src http://archive.ubuntu.com/ubuntu/ focal main restricted" >> /etc/apt/sources.list #&& echo "deb-src http://archive.ubuntu.com/ubuntu/ focal-updates main restricted" >> /etc/apt/sources.list && echo "deb-src http://security.ubuntu.com/ubuntu/ focal-security main restricted" >> /etc/apt/sources.list && echo "deb-src http://security.ubuntu.com/ubuntu/ focal-security universe" >> /etc/apt/sources.list && echo "deb-src http://security.ubuntu.com/ubuntu/ focal-security multiverse" >> /etc/apt/sources.list && sudo apt-get update
+    init: echo "deb-src http://archive.ubuntu.com/ubuntu/ focal-updates main restricted" >> /etc/apt/sources.list && echo "deb-src http://security.ubuntu.com/ubuntu/ focal-security main restricted" >> /etc/apt/sources.list 
+    command:  echo "deb-src http://security.ubuntu.com/ubuntu/ focal-security universe" >> /etc/apt/sources.list && echo "deb-src http://security.ubuntu.com/ubuntu/ focal-security multiverse" >> /etc/apt/sources.listecho "int"  #&& sudo apt-get install build-essential git libkrb5-dev graphviz nasm ccache -y && sudo apt-get build-dep -y libreoffice #sudo apt-get install ccache -y #echo "command" #sudo apt-get install ccache -y && ccache -M 51
 #  - name: Database
 #    init: echo 'init database' 
 #    command: npm start-db
